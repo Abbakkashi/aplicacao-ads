@@ -11,18 +11,21 @@
         <h1>Saúde em Dia</h1>
     </nav>
     <main>
-        <form action="#" method="get">
+        <form action="envia.php" method="post">
             <fieldset>
                 <label for="Inome">Nome Cliente:</label>
-                <input type="text" name="nomecli" id="Inome"><br>
+                <input type="text" name="nomecli" id="Inome" maxlength="100"><br>
+
                 <label for="Iconsulta">Consulta:</label>
                 <input type="text" name="consulta" id="Iconsulta"><br>
+
                 <label for="Idata">Data:</label>
                 <input type="date" name="data" id="Idata"><br>
+
                 <label for="Ihora">Hora:</label>
                 <input type="time" name="hora" id="Ihora"><br>
             </fieldset>
-            <input type="submit" value="Confirmar">
+            <button type="submit">Agendar Consulta</button>
         </form>
         <div class="botao_inicio">
             <a href="/index.html">Ínicio</a>
